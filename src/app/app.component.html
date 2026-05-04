@@ -1,0 +1,16 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <a routerLink="/home" style="text-decoration: none; color: inherit">MecatronicApp</a>
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</ion-button>
+        <ion-button routerLink="/carreer" routerLinkActive="active">Carrera</ion-button>
+        <ion-button routerLink="/benefits" routerLinkActive="active">Beneficios</ion-button>
+        <ion-button routerLink="/contact" routerLinkActive="active">Contacto</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>

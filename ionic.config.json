@@ -1,0 +1,7 @@
+{
+  "name": "MecatronicApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

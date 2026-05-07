@@ -1,0 +1,253 @@
+ :host {
+  --career-accent: #1d4ed8;
+  --career-beige: #e8dfd0;
+  --career-ink: #0a0a0a;
+  --career-muted: #404040;
+  --career-page-gutter: clamp(1rem, 4vw, 2.5rem);
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.career-shell {
+  --background: #ffffff;
+}
+
+#career-hero {
+  min-height: 70vh;
+  min-height: 70dvh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  border-bottom: 4px solid var(--career-ink);
+  background-color: var(--career-ink);
+  background-image: linear-gradient(180deg, rgba(10, 10, 10, 0.35) 0%, rgba(10, 10, 10, 0.82) 100%),
+    url('https://coitiab.es/wp-content/uploads/2025/04/Ingenieria-Mecatronica.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 2rem var(--career-page-gutter) 3rem;
+  box-sizing: border-box;
+}
+
+#career-hero h1 {
+  margin: 0;
+  max-width: 28ch;
+  font-family: ui-monospace, 'Cascadia Code', 'Consolas', monospace;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#career-hero h4 {
+  margin: 0.75rem 0 0;
+  font-family: ui-monospace, 'Cascadia Code', 'Consolas', monospace;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 70ch;
+}
+
+.career {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 2.5rem var(--career-page-gutter) 4rem;
+  box-sizing: border-box;
+  color: var(--career-ink);
+  font-family: ui-monospace, 'Cascadia Code', 'Consolas', monospace;
+}
+
+#career-introduction {
+  border-block: 2px solid var(--career-ink);
+  padding-inline: 12vw;
+  padding-block: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#career-introduction h4 {
+  margin: 0;
+  font-size: 2.15rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--career-muted);
+  max-width: 70ch;
+  text-align: left;
+}
+
+#career-about {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--career-beige);
+  border: 2px solid var(--career-ink);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: stretch;
+  justify-content: center;
+}
+
+#career-about-content p {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--career-ink);
+  max-width: 95ch;
+}
+
+.career-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+#career-about ion-button {
+  --border-radius: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#career-about ion-button[fill='solid'] {
+  --background: var(--career-accent);
+  --background-hover: #1e3a8a;
+  --background-activated: #172554;
+  --color: #ffffff;
+}
+
+#career-about ion-button[fill='outline'] {
+  --color: var(--career-ink);
+  --border-color: var(--career-ink);
+}
+
+#career-sections > h2,
+#career-degrees > h2,
+#career-modality > h2,
+#career-profile > h2 {
+  margin: 0 0 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--career-ink);
+}
+
+.career-list {
+  border: 2px solid var(--career-ink);
+  background: #ffffff;
+}
+
+.career-item {
+  padding: 1.25rem;
+  border-bottom: 2px solid var(--career-ink);
+}
+
+.career-item:last-child {
+  border-bottom: none;
+}
+
+.career-item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--career-accent);
+}
+
+.career-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--career-muted);
+  max-width: 95ch;
+}
+
+#career-degrees {
+  margin-top: 2rem;
+}
+
+.degree-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.degree-card {
+  padding: 1.25rem;
+  background: #ffffff;
+  border: 2px solid var(--career-ink);
+  border-left-width: 6px;
+  border-left-color: var(--career-accent);
+}
+
+.degree-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--career-ink);
+}
+
+.degree-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--career-muted);
+  max-width: 95ch;
+}
+
+#career-modality,
+#career-profile {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 2px solid var(--career-ink);
+}
+
+#career-modality p,
+#career-profile p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--career-muted);
+  max-width: 95ch;
+}
+
+@media (min-width: 768px) {
+  .hero-inner {
+    padding: 2.5rem var(--career-page-gutter) 4rem;
+  }
+
+  .career {
+    padding: 3rem var(--career-page-gutter) 5rem;
+  }
+
+  .degree-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #career-introduction {
+    padding-inline: 20vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .degree-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,1 +1,37 @@
-<ion-content [fullscreen]="true"></ion-content>
+<ion-content class="contact-shell" [fullscreen]="false" [scrollY]="false">
+  <section class="contact-hero" aria-label="Contacto de la carrera">
+    <h1>Contacto Mecatrónica</h1>
+    <p>
+      Estamos para ayudarte con información sobre admisión, plan de estudios y orientación académica.
+    </p>
+  </section>
+
+  <section class="contact-grid">
+    <article class="contact-card">
+      <h2>Datos de contacto</h2>
+      <p><strong>Correo:</strong> quiz11181@gmail.com</p>
+      <p><strong>Teléfono:</strong> +506 1234 5678</p>
+      <p><strong>Ubicación:</strong> Belén, Heredia</p>
+      <p><strong>Horario:</strong> Lunes a Viernes, 8:00 - 17:00</p>
+    </article>
+
+    <article class="contact-card">
+      <h2>Envíanos un mensaje</h2>
+      <form class="contact-form">
+        <label for="nombre">Nombre</label>
+        <input #nombre id="nombre" type="text" placeholder="Tu nombre" />
+
+        <label for="correo">Correo electrónico</label>
+        <input #correo id="correo" type="email" placeholder="tu@correo.com" />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea #mensaje id="mensaje" rows="3" placeholder="Cuéntanos tu duda"></textarea>
+
+        <ion-button expand="block" type="button" (click)="sendEmail(nombre.value, correo.value, mensaje.value)">
+          Enviar
+        </ion-button>
+        <p class="status-message" [class.error]="isError" *ngIf="statusMessage">{{ statusMessage }}</p>
+      </form>
+    </article>
+  </section>
+</ion-content>

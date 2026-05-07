@@ -1,0 +1,38 @@
+:host {
+  --app-ink: #0a0a0a;
+  --app-accent: #1d4ed8;
+}
+
+ion-header ion-toolbar {
+  --background: var(--app-ink);
+  --color: #ffffff;
+  --min-height: 56px;
+  --border-width: 0;
+  border-bottom: 2px solid #1f1f1f;
+  padding-inline: 0.5rem;
+}
+
+ion-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+ion-title a {
+  color: inherit;
+}
+
+ion-buttons ion-button {
+  --color: #ffffff;
+  --padding-start: 0.55rem;
+  --padding-end: 0.55rem;
+  min-height: 32px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+ion-buttons ion-button.active {
+  --color: var(--app-accent);
+}
